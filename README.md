@@ -11,6 +11,13 @@ Some changes I added:
 - made a notebook for clustering 
 - made a notebook for generating more captions for the input images
 
-## How to use: 
+## How to use --> through notebooks, implemented using Google Colab's GPU.
 
-info will follow. 
+- `prep_wikiart.ipynb` --> notebook for scraping and prepping the wikiart image dataset. 
+- `prep_news.ipynb` --> preps and scrapes the news data.
+- `run_attngan.ipynb` --> notebook for running the models (before running, change the name of the desired `captions_xxx.pickle` file to `captions.pickle` & set the runtime type of Colab to GPU instead of CPU. Don’t clone the original AttnGAN repo if you’re using this one.
+- `ImageCaptioning.ipynb` --> implements the [Image Captioning codebase from Ruotian Luo](https://github.com/ruotianluo/ImageCaptioning.pytorch) to generate more captions for the dataset.
+- `filter_captions` --> filters the named entities and the low-frequency words in the captions of the dataset. 
+- `image_clustering` --> clusters the images from the dataset. 
+
+The data that is supposed to be located in the different folders, can be scraped using the first two prep notebooks.
