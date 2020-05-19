@@ -11,8 +11,8 @@ Some changes I added:
 - made a notebook for clustering 
 - made a notebook for generating more captions for the input images
 
-## How to use --> through notebooks, implemented using Google Colab's GPU.
-
+## How to use 
+This implementation is done through jupyter notebooks, which have been run in Google Colab, accessing their free GPU.
 - `prep_wikiart.ipynb` --> notebook for scraping and prepping the wikiart image dataset. 
 - `prep_news.ipynb` --> preps and scrapes the news data.
 - `run_attngan.ipynb` --> notebook for running the models (before running, change the name of the desired `captions_xxx.pickle` file to `captions.pickle` & set the runtime type of Colab to GPU instead of CPU. Don’t clone the original AttnGAN repo if you’re using this one.
