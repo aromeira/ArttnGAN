@@ -1,0 +1,29 @@
+CONFIG_NAME: 'wiki_attn_filter'
+
+DATASET_NAME: 'wikiart'
+DATA_DIR: '../data/wikiart'
+GPU_ID: 0
+WORKERS: 1
+
+B_VALIDATION: False  # True  # False
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/wikiart_filter.pth'
+    B_NET_D: False
+    BATCH_SIZE: 100
+    NET_E: '../DAMSMencoders/wikiart/text_encoder125_filter.pth'
+
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 1
