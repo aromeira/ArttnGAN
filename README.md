@@ -6,6 +6,7 @@ Most of the AttnGAN code is a reproduction of the [Pytorch implementation](https
 Some changes I added: 
 - enabling the implementation for python3
 - created different cofigs for the different artistic models I wanted to run
+- added those pretrained models + their encoders (found in `DAMSMencoders` & `models`)
 - made a jupyter notebook to run the GAN according to the different configs
 - made a notebook for scraping images
 - made a notebook for clustering 
