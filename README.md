@@ -20,5 +20,6 @@ This implementation is done through jupyter notebooks, which have been run in Go
 - [ImageCaptioning.ipynb](notebooks/ImageCaptioning.ipynb) --> implements the [Image Captioning codebase from Ruotian Luo](https://github.com/ruotianluo/ImageCaptioning.pytorch) to generate more captions for the dataset.
 - [filter_captions.ipynb](notebooks/filter_captions.ipynb) --> filters the named entities and the low-frequency words in the captions of the dataset. 
 - [image_clustering.ipynb](notebooks/image_clustering.ipynb) --> clusters the images from the dataset. 
+- [Survey_analysis.ipynb](notebooks/Survey_analysis.ipynb) --> contains the distribution plots etc. from the statistical analysis of the survey. 
 
 The data that is supposed to be located in the different folders, can be scraped using the first two prep notebooks.
